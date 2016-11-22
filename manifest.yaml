@@ -1,0 +1,25 @@
+name: typeshed
+description: Typeshed models function types for the Python standard library and Python builtins, as well as third party packages.
+repository: git@github.com:lyft/typeshed.git
+report_ci: True
+docs:
+    section: "Infrastructure"
+
+containers:
+  - name: run
+    start_phase: parallel_init
+
+tests:
+  - name: unit
+    type: jailed
+    command: /code/typeshed/tests/mypy_test.py
+
+deploy:
+  - name: development
+    legacy: False
+  - name: staging
+    legacy: False
+  - name: canary
+    legacy: False
+  - name: production
+    legacy: False

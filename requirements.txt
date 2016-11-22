@@ -1,0 +1,7 @@
+pyyaml==3.11
+typed-ast==0.6.1
+lxml==3.6.4
+git+git://github.com/python/mypy@1d2a046c149e010816b6bcd5feae49e0ce3b32d2#egg=mypy-lang
+requests==2.11.1
+statsd==3.2.1
+typing==3.5.2.2
